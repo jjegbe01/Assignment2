@@ -1,0 +1,56 @@
+<html>
+<header>
+<script>
+function validateForms()
+{
+	var Email = document.getElementById('email').value;
+	var Feedback = document.getElementById('feedback').value;
+	
+	if (Email != "" && Feedback !=""){
+		alert("Thanks for the feedback!")
+	}
+	
+	if (Email != "")
+	{
+		alert("Email field is not blank.")
+	}
+	else 
+	{
+		alert("Don't leave the email field blank!")
+	}
+	
+	if(Feedback != "")
+	{
+		alert("The feedback field is not blank.")
+	}
+	else{
+		alert("Don't leave the feedback field blank!")
+	}
+	
+
+}
+</script>
+</header>
+
+<h1>Feedback Form</h1>
+<br>
+
+
+Email: <input name="emailField" type="text" id="email" value="">
+
+<br>
+
+Feedback: <input name="feedbackField" type="text" id="feedback" value="">
+
+
+<br>
+
+
+<input id="submitButton" type="button" value = "Submit" onclick="validateForms();">
+
+</form>
+<li><a href="FAQ.html">FAQ</a></li>
+<li><a href="Calculator.html">Calculator</a></li>
+<li><a href="RegistrationForm.html">Registration Form</a></li>
+
+</html>
